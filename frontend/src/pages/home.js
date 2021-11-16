@@ -1,9 +1,12 @@
 import React from "react";
+import Hero from "../components/Hero";
+import SuggestedProducts from "../components/SuggestedProducts";
 
 const Home = () => {
   return (
     <div>
-      <h1>Home Page for App</h1>
+      <Hero />
+      <SuggestedProducts/>
     </div>
   );
 };
