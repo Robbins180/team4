@@ -8,9 +8,9 @@ const Footer = () => {
       <h1 className="Footer">Duende Coding Collective</h1>
       <ul>
         <li>Aakaash Meduri</li>
-        <li>Brooke Calhoun</li>
+        {/* <li>Brooke Calhoun</li> */}
         <li>Drew Robbins</li>
-        <li>Emmanuel Kobara</li>
+        {/* <li>Emmanuel Kobara</li> */}
         <li>Gonzalo Meza-Cabrera</li>
         <li>Jeryl Emata</li>
         <li>Noah Brezel</li>
