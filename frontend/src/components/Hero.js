@@ -3,8 +3,8 @@ import "../styles/CSS/Hero.css";
 
 const Hero = () => {
   return (
-    <div>
-      <h1>Who are you shopping for?</h1>
+    <div className="hero">
+      <h1>Find Your Perfect Gift</h1>
       <button>Shop All Products</button>
     </div>
   );
