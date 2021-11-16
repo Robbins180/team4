@@ -1,0 +1,53 @@
+/* Products json dummy data */
+
+{
+    {
+        "id": 1,
+        "name": "toy-train",
+        "price": 59.99,
+        "description": "lorem",
+        "photo": "url()",
+    },
+
+    {
+        "id": 2,
+        "name": "barbie",
+        "price": 29.99,
+        "description": "lorem",
+        "photo": "url()",
+    },
+
+      {
+        "id": 3,
+        "name": "teddy-bear",
+        "price": 14.99,
+        "description": "lorem",
+        "photo": "url()",
+    },
+
+    {
+        "id": 4,
+        "name": "kids-tablet",
+        "price": 89.99,
+        "description": "lorem",
+        "photo": "url()",   
+    },
+
+    {
+        "id": 5,
+        "name": "trampoline",
+        "price": 159.99,
+        "description": "lorem",
+        "photo": "url()",   
+    },
+
+    {
+        "id": 6,
+        "name": "art-set",
+        "price": 39.99,
+        "description": "lorem",
+        "photo": "url()",   
+    }
+
+
+}
