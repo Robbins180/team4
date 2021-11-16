@@ -1,0 +1,10 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  color: purple;
+}
+
+body {
+  background-color: lightblue;
+}
