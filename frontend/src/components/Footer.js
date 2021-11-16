@@ -5,7 +5,7 @@ import '../styles/CSS/Footer.css';
 const Footer = () => {
   return (
     <div>
-      <h1 className= "Footer">Duende Coding Collective</h1>
+      <h1 className="Footer">Duende Coding Collective</h1>
       <ul>
         <li>Aakaash Meduri</li>
         <li>Brooke Calhoun</li>
