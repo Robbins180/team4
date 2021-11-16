@@ -2,7 +2,7 @@
 import "./styles/CSS/App.css";
 import React from 'react';
 import {Routes, Route} from 'react-router-dom';
-import Header from "./components/Header";
+import MobileBar from "./components/MobileBar";
 import Home from "./pages/Home";
 import Wishlist from "./pages/Wishlist";
 import Footer from "./components/Footer";
@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
-      <Header />
+      <MobileBar />
       <Routes>
         <Route path="/" element={<Home/>}>
         </Route>
