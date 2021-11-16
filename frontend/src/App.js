@@ -6,7 +6,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <h1>Duende Hackathon Application</h1>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/wishlist">
+          <Wishlist />
+        </Route>
+      </Switch>
       <Footer />
     </div>
   );
