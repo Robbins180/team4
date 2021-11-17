@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/CSS/Products.css';
-import products from '../data/products.json'
+
 
 
 
@@ -14,21 +14,21 @@ const ProductCard = (products) => {
       <div className='products-container'>
         <div className='products-box'>
           <div className='name-box'>
-              {products.product.title}
-            
+              {products.product.title}          
             </div>
-          <div className='img-box'>
-            {/* <img url() /> */}
-            <img src={products.product.photo} />
-          </div>
-          <div className='middle-box'>
-            
             <div className='description-box'>
               {products.product.description}
             </div>
+            <div className='img-box'>
+              {/* <img url() /> */}
+              <img src={products.product.photo}  alt={products.product.title}/>
+            </div>
+          <div className='middle-box'>  
             <div className='sale-box'>
+              <p className='bfs'>BLACK FRIDAY SPECIAL</p>
               <p>${products.product.price}</p>
             </div>
+            <button className='buy-btn'>BUY</button>
           </div>        
           <div className='bottom-box'>
             <div className='favorite-box'></div>
