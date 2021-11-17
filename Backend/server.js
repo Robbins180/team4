@@ -3,17 +3,28 @@ const express = require('express');
 const path = require('path');
 const logger = require('morgan');
 const favicon = require('serve-favicon');
+const { auth } = require('express-openid-connect');
 
 require('./config/database');
 
 // Require controllers here
 
 const app = express();
+const config = {
+  authRequired: false,
+  auth0Logout: true,
+  secret: 'a long, randomly-generated string stored in env',
+  baseURL: 'http://localhost:3003',
+  clientID: 'SiJK8rF6y0LAlAwZkQHuEvsajpefuRCp',
+  issuerBaseURL: 'https://dev-9nvikac4.us.auth0.com'
+};
+const { requiresAuth } = require('express-openid-connect');
 
 // add in when the app is ready to be deployed
 // app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(express.json());
+app.use(auth(config));
 
 app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'build'))); // this allows express to find the build folder
@@ -28,6 +39,15 @@ app.use('/api/users', require('./routes/api/users'));
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
+
+app.get('/', (req, res) => {
+  res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
+});
+
+app.get('/profile', requiresAuth(), (req, res) => {
+  res.send(JSON.stringify(req.oidc.user));
+});
+
 
 const port = process.env.PORT || 3003;
 
