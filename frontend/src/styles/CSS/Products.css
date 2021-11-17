@@ -1,52 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;600;700&display=swap');
 
-
-.products-container {
+/* Product.js: */
+.product-list {
     display: flex;
-    border: 2px solid red;
-    background-color: white;
-    background-size: cover;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    background-repeat: no-repeat;
-    text-align: center;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: .3rem;
+}
 
+/* ProductCard.js: */
+.products-container {
+    margin: 1rem auto;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(40,40,40);
+    display: flex;
+    background-size: cover;
+    font-weight: 500;
+    font-size: 1 rem;
+    text-align: center;
 }
 
 
 .top-box {
-    border: 2px solid blue;
     width: cover;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin-left: .5rem;
 }
 
 .products-box {
-    border: 2px solid blue;
+    border: 1px solid rgb(140,140,140);
+    border-radius:10px;
     width: 432px;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* IMage*/
-
-.img-box {
-    border: 2px solid green;
-    width: 181px;
-    height: 188px;
+.bfs {
+    font-weight: 600;
 }
+.image-and-sale {
+    display: flex;
+    align-items: center;
+
+}
+.sale-box {
+    text-align: center;
+}
+.name-box {
+    font-weight: bold;
+}
+
+
 
 img {
     width: 181px;
     height: 188px;
     margin-left: 2px;
 }
+button {
+    background-color: #9d0c0b;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 8px;
+    width: 4.5rem;
+    height: 2rem;
+    border-style: none;
+    margin: .2rem;
 
-
-/* .name-box {
-    
 }
 
-.description-box {
-    
-} */
