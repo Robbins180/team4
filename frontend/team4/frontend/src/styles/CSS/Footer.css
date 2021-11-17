@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
+.Footer {
+  margin: auto;
+  text-align: center;
+  border: 2px solid blue;
+  width: 60%;
+}
+
+.Footer .team-list {
+  list-style-type: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Footer .team-list li {
+  padding: 10px;
+  margin: 0 1em;
+}
+
+p {
+  color: #e4d6f5;
+  border: 1px solid black;
+}
