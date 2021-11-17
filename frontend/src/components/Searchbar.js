@@ -14,17 +14,18 @@ const Searchbar = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
+    <form className="search" onSubmit={handleSubmit}>
+      {/* <label> */}
         <input
+        className="searchBar"
         placeholder="What are you looking for?"
         type="text"
         value={search}
         onChange={e => setSearch(e.target.value)}
         required
         />
-      </label>
-      <input type="submit" value="Search"/>
+      {/* </label> */}
+      <input className="searchButton" type="submit" value="Search"/>
     </form>
   );
 };
