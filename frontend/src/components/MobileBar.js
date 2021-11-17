@@ -10,7 +10,7 @@ const MobileBar = () => {
       <Link to="/">
         <AiFillHome className="widget" />
       </Link>
-      <Link to="/wishlist">
+      <Link to="/Wishlist">
         <BsFillSuitHeartFill className="widget" />
       </Link>
     </div>
