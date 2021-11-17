@@ -11,12 +11,12 @@ import Products from "./pages/Products";
 function App() {
   return (
     <div className="App">
+      <Searchbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/shop" element={<Products />}></Route>
         <Route path="/Wishlist" element={<Wishlist />}></Route>
       </Routes>
-      <Searchbar />
       <MobileBar />
       <Footer />
     </div>
