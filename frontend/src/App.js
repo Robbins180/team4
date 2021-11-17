@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import Wishlist from "./pages/Wishlist";
 import Footer from "./components/Footer";
 import Searchbar from "./components/Searchbar";
+import Products from "./pages/Products";
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/Wishlist" element={<Wishlist />}></Route>
       </Routes>
+      <Products />
       <Searchbar/>
       <MobileBar />
       <Footer />

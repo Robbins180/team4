@@ -1,37 +1,37 @@
 import React from "react";
 import '../styles/CSS/Products.css';
-import products from './../..public/products.json'
+import products from '../data/products.json'
 
 
 
-const Products = () => {
-  const getProducts = products.map((p) =>{
-    
-  })
-
-
+const ProductCard = (products) => {
+ 
+ 
   return (
+      
+    
     <div>
       <div className='products-container'>
         <div className='products-box'>
+          <div className='name-box'>
+              {products.product.title}
+            
+            </div>
           <div className='img-box'>
             {/* <img url() /> */}
-            <img src={photo} />
+            <img src={products.product.photo} />
           </div>
           <div className='middle-box'>
-            <div className='name-box'>
-              {name}
-            </div>
+            
             <div className='description-box'>
-              {description}
+              {products.product.description}
             </div>
             <div className='sale-box'>
-              <p>`$ ${price}`</p>
+              <p>${products.product.price}</p>
             </div>
           </div>        
           <div className='bottom-box'>
             <div className='favorite-box'></div>
-            {/* <div className='addToCart-box'></div> */}
           </div>  
         </div>
       </div>
@@ -39,4 +39,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default ProductCard;
