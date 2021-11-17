@@ -1,14 +1,11 @@
 const User = require('../models/user');
 const jwt = require('jsonwebtoken');
 const SECRET = process.env.SECRET;
-// const { v4: uuidv4 } = require('uuid');
-// const S3 = require('aws-sdk/clients/s3');
-// const s3 = new S3(); // initialize the construcotr
-// now s3 can crud on our s3 buckets
 
 module.exports = {
   signup,
-  login
+  login,
+  favorite
 };
 
 async function signup(req, res) {
@@ -24,7 +21,7 @@ async function signup(req, res) {
 }
 
 async function login(req, res) {
-  console.log(req.body)
+  // console.log(req.body)
   try {
     const user = await User.findOne({ email: req.body.email });
     console.log(user, ' this user in login')
@@ -44,6 +41,10 @@ async function login(req, res) {
   }
 }
 
+function favorite(req, res) {
+  console.log('favorite route hitting');
+  // use the JSON of dummy data to relate items with users
+}
 
 /*----- Helper Functions -----*/
 

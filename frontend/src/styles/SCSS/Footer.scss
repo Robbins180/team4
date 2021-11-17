@@ -1,7 +1,20 @@
-@import './variables';
+@import "./variables";
 
 .Footer {
-   background-color: purple;
+  margin: auto;
+  text-align: center;
+  border: 2px solid blue;
+  width: 60%;
+
+  .team-list {
+    list-style-type: none;
+    flex-wrap: wrap;
+
+    li {
+      padding: 10px;
+      margin: 0 1em;
+    }
+  }
 }
 
 p {
