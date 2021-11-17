@@ -2,8 +2,51 @@
 
 
 .products-container {
-
+    display: flex;
     border: 2px solid red;
     background-color: white;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    background-repeat: no-repeat;
+    text-align: center;
+    
 
 }
+
+
+.top-box {
+    border: 2px solid blue;
+    width: cover;
+}
+
+.products-box {
+    border: 2px solid blue;
+    width: 432px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* IMage*/
+
+.img-box {
+    border: 2px solid green;
+    width: 181px;
+    height: 188px;
+}
+
+img {
+    width: 181px;
+    height: 188px;
+    margin-left: 2px;
+}
+
+
+/* .name-box {
+    
+}
+
+.description-box {
+    
+} */
