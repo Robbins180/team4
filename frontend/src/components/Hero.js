@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="hero">
       <h1>Find Your Perfect Gift</h1>
-      <button>Shop All Products</button>
+      {/* <button>Shop All Products</button> */}
     </div>
   );
 };
