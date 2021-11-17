@@ -1,14 +1,13 @@
 @import "./variables";
 
 .Footer {
-  background-color: white;
   margin: auto;
   text-align: center;
+  border: 2px solid blue;
+  width: 60%;
 
   .team-list {
     list-style-type: none;
-    display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
 
     li {

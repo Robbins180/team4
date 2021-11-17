@@ -10,13 +10,14 @@ import Searchbar from "./components/Searchbar";
 function App() {
   return (
     <div className="App">
-      <Searchbar/>
+
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/Wishlist" element={<Wishlist />}></Route>
       </Routes>
-      <Footer />
+      <Searchbar/>
       <MobileBar />
+      <Footer />
     </div>
   );
 }
