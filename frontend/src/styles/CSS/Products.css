@@ -61,7 +61,7 @@ img {
     height: 188px;
     margin-left: 2px;
 }
-button {
+.buy-btn {
     background-color: #9d0c0b;
     color: white;
     font-weight: 600;
