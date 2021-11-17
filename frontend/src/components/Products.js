@@ -14,14 +14,15 @@ const Products = () => {
     <div>
       <div className='products-container'>
         <div className='products-box'>
+          <div className='name-box'>
+              {name}
+          </div>
           <div className='img-box'>
             {/* <img url() /> */}
             <img src={photo} />
           </div>
           <div className='middle-box'>
-            <div className='name-box'>
-              {name}
-            </div>
+            
             <div className='description-box'>
               {description}
             </div>
