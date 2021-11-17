@@ -1,21 +1,12 @@
 import React from "react";
 import "../styles/CSS/SuggestedProducts.css";
 
-const SuggestedProducts = (props) => {
-  //   const { products } = props;
-
-  // const suggestedProducts = () => {
-  //   return products.map((product) => (
-  //     <div>
-  //       <img src="" />
-  //     </div>
-  //   ));
-  // };
-
+const SuggestedProducts = (products) => {
   return (
     <div className="sp-wrapper">
-      <h1 className="sp-title">Popular gifts</h1>
-      <div className="sp-container">Products</div>
+      <div className="sp-container">
+        <img src={products.product.photo} alt={products.product.title} />
+      </div>
     </div>
   );
 };

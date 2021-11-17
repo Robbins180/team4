@@ -1,11 +1,14 @@
 import React from "react";
 import "../styles/CSS/Hero.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
     <div className="hero">
       <h1>Find Your Perfect Gift</h1>
-      {/* <button>Shop All Products</button> */}
+      <Link to="/shop">
+        <button>Shop All Products</button>
+      </Link>
     </div>
   );
 };
