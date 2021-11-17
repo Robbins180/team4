@@ -8,17 +8,15 @@ import Footer from "./components/Footer";
 import Searchbar from "./components/Searchbar";
 import Products from "./pages/Products";
 
-
 function App() {
   return (
     <div className="App">
-
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/shop" element={<Products />}></Route>
         <Route path="/Wishlist" element={<Wishlist />}></Route>
       </Routes>
-      <Products />
-      <Searchbar/>
+      <Searchbar />
       <MobileBar />
       <Footer />
     </div>
