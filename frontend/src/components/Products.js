@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/CSS/Products.css';
+import "./.././products.json";
 
 
 const Products = () => {
@@ -8,7 +9,7 @@ const Products = () => {
       <div className='products-container'>
         <div className='products-box'>
           <div className='img-box'>
-            <img url() />
+            <img src={photo} alt={name} />
           </div>
           <div className='middle-box'>
             <div className='name-box'></div>
