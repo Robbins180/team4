@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="hero">
-      <h1>Find Your Perfect Gift</h1>
+      <h1>Find your perfect gift</h1>
       <Link to="/shop">
         <button>Shop All Products</button>
       </Link>
