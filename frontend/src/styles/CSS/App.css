@@ -22,7 +22,7 @@
   flex-direction: column;
   /* -webkit-box-pack: center;
   -ms-flex-pack: center; */
-  justify-content: center;
+  
   height: 100vh;
   max-width: 487px;
 }
