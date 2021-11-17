@@ -10,7 +10,7 @@ const Home = () => {
       <h1 className="sp-title">Popular gifts</h1>
       <div>
         {products.map((product, index) => {
-          return <SuggestedProducts product={product} index={index} />;
+          return <SuggestedProducts product={product} key={index} />;
         })}
       </div>
     </div>
