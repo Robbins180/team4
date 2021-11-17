@@ -20,6 +20,7 @@ input {
    margin: .3rem;
 }
 .searchBar {
+   background-color:rgba(240, 240, 240, 1);
    text-align: center;
    font-weight: 500;
    width:80%;
