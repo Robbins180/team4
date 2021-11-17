@@ -3,9 +3,9 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
-  color: purple;
+  color: rgba(60, 60, 67, 0.6)
 }
 
 body {
-  background-color: lightblue;
+  background-color: white;
 }
