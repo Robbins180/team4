@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/CSS/Products.css';
+import '../styles/CSS/Products.css'; 
 
 
 
@@ -22,20 +22,20 @@ const ProductCard = (products) => {
               {products.product.description}
              </div>
             </div>
-            <div className='img-box'>
-             
-              <img src={products.product.photo}  alt={products.product.title}/>
+            <div className='image-and-sale'>
+              <div className='img-box'>
+                <img src={products.product.photo}  alt={products.product.title}/>
+              </div>
+                <div className='sale-box'>
+                  <p className='bfs'>BLACK FRIDAY SPECIAL</p>
+                  <p>${products.product.price}</p>
+                <button className='buy-btn'>BUY</button>
+              </div>
             </div>
-         
-            <div className='sale-box'>
-              <p className='bfs'>BLACK FRIDAY SPECIAL</p>
-              <p>${products.product.price}</p>
-            </div>
-            <button className='buy-btn'>BUY</button>
           </div>        
-          <div className='bottom-box'>
-            <div className='favorite-box'></div>
-          </div>  
+          {/* <div className='bottom-box'>
+            {/* <div className='favorite-box'></div> */}
+          {/* </div>   */} 
         
       </div>
     </div>
